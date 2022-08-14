@@ -12,7 +12,7 @@ function select(choosen) {
         } else {
             prato.classList.remove("selected");
             choosen.classList.toggle("selected");
-            prato = choosen;
+            prato = choosen
         }
     }
     if (choosen.classList.contains("bebida")) {
@@ -37,6 +37,16 @@ function select(choosen) {
             sobremesa.classList.remove("selected");
             choosen.classList.toggle("selected");
             sobremesa = choosen;
+        }
+    }
+    if (prato !== undefined && bebida !== undefined && sobremesa !== undefined) {
+        const b = document.querySelector("button")
+        if (prato.classList.contains("selected") && bebida.classList.contains("selected") && sobremesa.classList.contains("selected")) {
+            b.classList.add("enable")
+            b.innerHTML = "Fechar pedido"
+        } else {
+            b.classList.remove("enable")
+            b.innerHTML = "Selecione os 3 itens para fechar o pedido"
         }
     }
 }
