@@ -29,21 +29,21 @@
                 <img src="./img/frango_yin_yang 1.png" alt="Frango Yin Yang">
                 <h3>Frango Yin Yang</h3>
                 <p>Um pouco de batata, um pouco de salada</p>
-                <h4>R$ <span>14,9</span>0</h4>
+                <h4>R$ <span>14,90</span></h4>
             </div>
             <div class="prato" onclick="select(this)">
                 <ion-icon name="checkmark-circle"></ion-icon>
                 <img src="./img/feijao-e-arroz.jpg" alt="Feijão e Arroz">
                 <h3>Feijão e Arroz</h3>
                 <p>Para crescer e ficar forte</p>
-                <h4>R$ <span>15,9</span>0</h4>
+                <h4>R$ <span>15,90</span></h4>
             </div>
             <div class="prato" onclick="select(this)">
                 <ion-icon name="checkmark-circle"></ion-icon>
                 <img src="./img/strogonoff-de-frango.jpg" alt="Strogonoff de Frango">
                 <h3>Strogonoff de Frango</h3>
                 <p>Direto da Rússia</p>
-                <h4>R$ <span>12,9</span>0</h4>
+                <h4>R$ <span>12,90</span></h4>
             </div>
             <div class="prato" onclick="select(this)">
                 <ion-icon name="checkmark-circle"></ion-icon>
@@ -139,6 +139,30 @@
         <div class="space"></div>
         <div class="bottom">
             <button onclick="pedir(this)" class="botao" type="button">Selecione os 3 itens para fechar o pedido</button>
+        </div>
+    </div>
+
+    <div class="confirm">
+        <div class="popup">
+            <h4>Confirme seu pedido</h4>
+            <div class="c-prato">
+                <p class="nome"></p>
+                <p class="preco"></p>
+            </div>
+            <div class="c-bebida">
+                <p class="nome"></p>
+                <p class="preco"></p>
+            </div>
+            <div class="c-sobremesa">
+                <p class="nome"></p>
+                <p class="preco"></p>
+            </div>
+            <div class="total">
+                <p>TOTAL</p>
+                <p class="valor"></p>
+            </div>
+            <button class="botao1" onclick="send()">Tudo certo, pode pedir!</button>
+            <button class="botao2" onclick="hide()">Cancelar</button>
         </div>
     </div>
 
